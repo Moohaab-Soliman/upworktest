@@ -1,25 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import LinearChart from "./components/Chart";
+import BarChart from "./components/BarChart";
+import {Divider} from "@material-ui/core";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    return (
+        <div className="App">
+            <header className="App-header">
+                <LinearChart/>
+                <Divider/>
+                <BarChart/>
+            </header>
+        </div>
+    );
 }
 
 export default App;
